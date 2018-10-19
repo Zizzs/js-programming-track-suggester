@@ -6,6 +6,7 @@ $(document).ready(function(event) {
         var frontEndBackEnd = parseInt($("#frontBackend").val());
         var time = parseInt($("#timeAmount").val());
         var color = parseInt($("#favColor").val());
+        var name = $("input#nameInput").val();
 
         $('#favColor').css('color','green');
         $('#favColor').css('color','red');
@@ -22,7 +23,7 @@ $(document).ready(function(event) {
             money = 3
         }
 
-
+        debugger
         if (frontEndBackEnd === 2 &&
             company === 1 && 
             money   === 1 &&
@@ -33,21 +34,16 @@ $(document).ready(function(event) {
             result = "CSS";
 
         } else if (frontEndBackEnd === 2 &&
-                   (company === 2 || 3) && 
+                   (company === 2 || 3 && !4) && 
                    (money === 1) &&
-                   time === 3) {
+                   (time === 2 || 3) &&
+                   (color === 1 || 2)) {
                    result = "Java";
 
-        } else if (color === 2 &&
-                    frontEndBackEnd === 2 &&
-                    (money === 2 && !3 && !4) &&
-                    time === 2 || 1) {
-                    result = "Ruby";
-
-        } else if (color === !2 &&
+        } else if (color === 3 &&
                    frontEndBackEnd === 2 &&
                    (company === 3 || 4) &&
-                   money === 2 &&
+                   money === 1 &&
                    time === 3 || 4) {
                    result = "PHP";
         }
@@ -76,14 +72,7 @@ $(document).ready(function(event) {
             $("#noInfo").hide();
             $("#cssInfo").hide();
         }
-        if (result === "Ruby") {
-            $("#csharpInfo").hide();
-            $("#javaInfo").hide();
-            $("#phpInfo").hide();
-            $("#rubyInfo").show();
-            $("#noInfo").hide();
-            $("#cssInfo").hide();
-        }
+      
         if (result === "CSS") {
             $("#csharpInfo").hide();
             $("#javaInfo").hide();
@@ -93,6 +82,7 @@ $(document).ready(function(event) {
             $("#cssInfo").show();
         }
 
+        $(".yourname").text(name);
         //Used for Testing Purposes
         //$("#output").text(result);
 

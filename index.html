@@ -9,11 +9,16 @@
 </head>
 <body>
     <div class="container">
-        <h1 id="headerOne">Programming Track Suggester</h1>
+        <p id="headerTop">Alex Williams - <a href="https://github.com/Zizzs/">Github Repository</a></p><br>
+        <img id="headerimage" src="img/headerimage.jpg">
         <div id="description">Choose from the options below to find out the best programming language for you.</div>
         <br>
         <br>
         <form id="formInfo">
+            <div id="yourNameDiv" class="form-group">
+                <label class="control-label for="nameInput">Your Name</label>
+                <input required="" id="nameInput" class="form-control" type="text">
+            </div>
             <div id="companySizeDiv" class="form-group">
                 <label class="control-label" for="companySize">Choose your desired company size:</label>
                 <select class="form-control" id="companySize">
@@ -68,26 +73,43 @@
                         <option style="color:blue"value="3">Blue</option>
                     </select>
             </div>
-
+            <br>
             <button id="submitbutton" type="submit" class="btn btn-info btn-lg">Show Me My Language</button>
         </form>
         <br>
-        <div class="well well-lg" id="csharpInfo"><img id="csharpimg" src="img/csharp.png">
-        </div>
+        <div class="well well-lg">
+            <div id="csharpInfo">
+                <img id="csharpimg" src="img/csharp.png">
+                <h4 class="outputHeader"><span class="yourname"></span>, you have picked the C# Programming language!</h4><br>
+                <p class="outputParagraph">C# is a general object-oriented programming (OOP) language for networking and Web development. C# is specified as a common language infrastructure (CLI) language.<br><br>In January 1999, Dutch software engineer Anders Hejlsberg formed a team to develop C# as a complement to Microsoft’s NET framework. Initially, C# was developed as C-Like Object Oriented Language (Cool). The actual name was changed to avert potential trademark issues. In January 2000, NET was released as C#. Its NET framework promotes multiple Web technologies.<br>The term’s # character derives its name from the musical sharp key, which denotes a one semitone pitch increase. C# is pronounced "see sharp."<br><a href="https://www.techopedia.com/definition/26272/c-sharp">Definition from Techopedia</a></p>
+            </div>
 
-        <div class="well well-lg" id="javaInfo"><img id="javaimg" src="img/java.png">
-        </div>
+            <div id="javaInfo">
+                <img id="javaimg" src="img/java.png">
+                <h4 class="outputHeader"><span class="yourname"></span>, you have picked the Java Programming language!</h4><br>
+                <p class="outputParagraph">Java is a programming language that produces software for multiple platforms. When a programmer writes a Java application, the compiled code (known as bytecode) runs on most operating systems (OS), including Windows, Linux and Mac OS. Java derives much of its syntax from the C and C++ programming languages. <br><br> Java produces applets (browser-run programs), which facilitate graphical user interface (GUI) and object interaction by Internet users. Prior to Java applets, Web pages were typically static and non-interactive. Java applets have diminished in popularity with the release of competing products, such as Adobe Flash and Microsoft Silverlight.<br><a href="https://www.techopedia.com/definition/3927/java">Definition from Techopedia</a></p>
+            </div>
 
-        <div class="well well-lg" id="phpInfo"><img id="phpimg" src="img/php.png">
-        </div>
+            <div id="phpInfo">
+                <img id="phpimg" src="img/php.png">
+                <h4 class="outputHeader"><span class="yourname"></span>, you have picked the PHP Programming language!</h4><br>
+                <p class="outputParagraph">PHP is a recursive acronym for PHP: Hypertext Preprocessor, a scripting language used to create dynamic and interactive HTML Web pages. A server processes PHP commands when a website visitor opens a page, then sends results to the visitor’s browser.<br><br>PHP is very easy for beginners and also offers many advanced features for professional programmers. PHP runs most efficiently on an Apache server, but it can also run on IIS. PHP is an open-source and cross-platform language. It can be built as an Apache module or a CGI script. As an Apache module, PHP is very fast and lightweight, allowing for quick turnaround.<br><a href="https://www.techopedia.com/definition/24406/php-hypertext-preprocessor-php">Definition from Techopedia</a></p>
+            </div>
 
-        <div class="well well-lg" id="rubyInfo"><img id="rubyimg" src="img/ruby.png">
-        </div>
+            <div id="cssInfo">
+                <img id="cssimg" src="img/css.png">
+                <h4 class="outputHeader"><span class="yourname"></span>, you have picked the CSS Programming language!</h4><br>
+                <p class="outputParagraph">Cascading Style Sheets (CSS) is a standard (or language) that describes the formatting of markup language pages. CSS defines formatting for the following document types:
+                <ul>
+                <li>HyperText Markup Language (HTML)</li>
+                <li>Extensible HyperText Markup Language (XHTML)</li>
+                <li>Extensible Markup Language (XML)</li>
+                <li>Scalable Vector Graphic (SVG)</li>
+                <li>XML User Interface Language (XUL)</li>
+                </ul><br>CSS enables developers to separate content and visual elements for greater page control and flexibility. A CSS file is normally attached to an HTML file by means of a link in the HTML file.
 
-        <div class="well well-lg" id="cssInfo"><img id="cssimg" src="img/css.png">
-        </div>
-
-        <div class="well well-lg" id="noInfo"><img id="sadfaceimg" src="img/sadface.png">
+                In December 1998, the World Wide Web Consortium (W3C) published the first CSS specification (CSS1). This was followed by CSS Level 2 (CSS2), and CSS Level 2, Revision 1 (CSS2.1)<br><a href="https://www.techopedia.com/definition/26268/cascading-style-sheet-css">Definition from Techopedia</a></p>
+            </div>
         </div>
     </div>
 </body>

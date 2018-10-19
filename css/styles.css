@@ -1,26 +1,26 @@
 
 #csharpInfo {
-    display: none
+    display: none;
+    color: #EDF5E1;
+    padding-left: 10px;
 }
 
 #javaInfo {
-    display: none
+    display: none;
+    color: #EDF5E1;
+    padding-left: 10px;
 }
 
 #phpInfo {
-    display: none
-}
-
-#rubyInfo {
-    display: none
+    display: none;
+    color: #EDF5E1;
+    padding-left: 10px;
 }
 
 #cssInfo {
-    display: none
-}
-
-#noInfo {
-    display: none
+    display: none;
+    color: #EDF5E1;
+    padding-left: 10px;
 }
 
 #companySize {
@@ -31,6 +31,9 @@
     max-width: 30%;
 }
 
+#nameInput {
+    max-width: 60%;
+}
 #timeAmount{
     max-width: 16%;
 }
@@ -41,42 +44,32 @@
 #csharpimg {
     height: 250px;
     width: 250px;
-    margin-left: 35%;
+    margin-top: 10px;
+    margin-left: 40%;
     margin-right: 50%;
 }
 
 #javaimg {
     height: 250px;
     width: 200px;
-    margin-left: 35%;
+    margin-top: 10px;
+    margin-left: 40%;
     margin-right: 50%;
 }
 
 #phpimg {
     height: 250px;
     width: 250px;
-    margin-left: 35%;
-    margin-right: 50%;
-}
-
-#rubyimg {
-    height: 250px;
-    width: 250px;
-    margin-left: 35%;
-    margin-right: 50%;
-}
-
-#sadfaceimg {
-    height: 250px;
-    width: 250px;
-    margin-left: 35%;
+    margin-top: 10px;
+    margin-left: 40%;
     margin-right: 50%;
 }
 
 #cssimg {
     height: 250px;
     width: 250px;
-    margin-left: 35%;
+    margin-top: 10px;
+    margin-left: 40%;
     margin-right: 50%;
 }
 
@@ -100,7 +93,8 @@
 
 .well {
     border: 5px;
-    background-color: rgb(216, 208, 189);
+    background-color: #379683;
+    border-radius: 5px;
 }
 
 body {
@@ -123,4 +117,50 @@ body {
 
 .control-label {
     font-size: 23px;
+}
+
+.outputHeader {
+    font-style: bold;
+    font-size: 30px;
+    text-align: center;
+}
+
+.outputParagraph {
+    font-size: 18px;
+    font-style: italic;
+}
+
+a:link {
+    color: #05386B;
+}
+
+a:visited {
+    color: #EDF5E1;
+}
+
+a:hover {
+    color: #EDF5E1 ;
+}
+
+a:active {
+    color: #8EE4AF;
+}
+
+#headerTop {
+    color: #05386B;
+    font-family: "Raleway", sans-serif;
+    font-size: 15px;
+
+}
+
+#headerimage {
+    margin-left: 5%;
+    margin-right: 50%;
+}
+
+#submitbutton {
+    background-color: #05386B;
+    color: #EDF5E1;
+    border: #EDF5E1;
+    text-align: center;
 }
