@@ -45,7 +45,7 @@
     height: 250px;
     width: 250px;
     margin-top: 10px;
-    margin-left: 40%;
+    margin-left: 36%;
     margin-right: 50%;
 }
 
@@ -53,7 +53,7 @@
     height: 250px;
     width: 200px;
     margin-top: 10px;
-    margin-left: 40%;
+    margin-left: 36%;
     margin-right: 50%;
 }
 
@@ -61,7 +61,7 @@
     height: 250px;
     width: 250px;
     margin-top: 10px;
-    margin-left: 40%;
+    margin-left: 36%;
     margin-right: 50%;
 }
 
@@ -69,7 +69,7 @@
     height: 250px;
     width: 250px;
     margin-top: 10px;
-    margin-left: 40%;
+    margin-left: 36%;
     margin-right: 50%;
 }
 
@@ -135,7 +135,7 @@ a:link {
 }
 
 a:visited {
-    color: #EDF5E1;
+    color: rgb(114, 100, 189);
 }
 
 a:hover {
@@ -163,4 +163,14 @@ a:active {
     color: #EDF5E1;
     border: #EDF5E1;
     text-align: center;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    background-color: #05386B;
+    border-top: 1px solid #05386B;
+    margin: 1em 0;
+    padding: 0;
 }

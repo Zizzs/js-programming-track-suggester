@@ -5,7 +5,7 @@
     <link href="http://fonts.googleapis.com/css?family=Dosis" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="css/bootstrap.css" style="text/css">
     <link rel="stylesheet" href="css/styles.css" style="text/css">
-    <title>Track Suggester</title>
+    <title>Programming Track Suggester</title>
 </head>
 <body>
     <!--Start of the Page-->
@@ -13,10 +13,9 @@
         <p id="headerTop">Alex Williams - <a href="https://github.com/Zizzs/">Github Repository</a></p><br>
         <img id="headerimage" src="img/headerimage.jpg">
         <div id="description">Choose from the options below to find out the best programming language for you.</div>
-        <br>
-        <br>
+        <hr>
         <!--This section is the output from the branches, stating the programming language you ended up with and also gives information about that language. Including a link to a website (Techopedia) that has more information regarding the language.-->
-        <div class="well well-lg">
+        <div id="infoWell" class="well well-lg">
             <div id="csharpInfo">
                 <img id="csharpimg" src="img/csharp.png">
                 <h4 class="outputHeader"><span class="yourname"></span>, you have picked the C# Programming language!</h4><br>
@@ -53,8 +52,9 @@
         <!--Start of the Form-->
         <form id="formInfo">
             <!--Name Form, Will pop up an alert if left blank-->
+            <hr>
             <div id="yourNameDiv" class="form-group">
-                <label class="control-label for="nameInput">Your Name</label>
+                <label class="control-label" for="nameInput">Name</label>
                 <input required="" id="nameInput" class="form-control" type="text">
             </div>
             <!--Designate which size company you would prefer to work in. Sets value and used for branching.-->
@@ -67,6 +67,7 @@
                     <option value="4">I'd much rather work in a smaller company, where my syntax errors will be seen by all!</option>
                 </select>
             </div>
+            <br>
             <!--Designate how much money you would like to make. Sets value and used for branching.-->
             <div class="radio">
                 <label class="control-label" for="companySize">How much money would you like to make?</label><br>
@@ -80,6 +81,7 @@
                       I'm fine with just a decent bit of money.
                 </label>
             </div>
+            <br>
             <!--Designate if you would prefer to do Backend or Frontend code.-->
             <div id="frontBackDiv" class="form-group">
                 <label class="control-label" for="frontBackend">Would you prefer to work on the Front End or the Back End?</label>
@@ -88,6 +90,7 @@
                         <option value="2">I would like to work Back End!</option>
                     </select>
             </div>
+            <br>
             <!--Asks how many hours you expect to put into the code to master it. Not really a realistic value, but is used in branching.-->
             <div id="timeDiv" class="form-group">
                 <label class="control-label" for="timeAmount">How many hours do you expect to put into learning the language?</label>
@@ -98,6 +101,7 @@
                         <option value="4">Over 9000 Hours</option>
                     </select>
             </div>
+            <br>
             <!--Pick which color you prefer. Used as a temnporary form to fit form requirements. Might get changed later, but I kinda like it.-->
             <div id="colorDiv" class="form-group">
                 <label class="control-label" for="favColor">What is your favorite color?</label>
@@ -112,6 +116,9 @@
             </div>
             <br>
             <button id="submitbutton" type="submit" class="btn btn-info btn-lg">Show Me My Language</button>
+            <br>
+            <br>
+            <hr>
         </form>
     </div>
 </body>
