@@ -19,11 +19,8 @@ $(document).ready(function(event) {
         if (money === "moneyTwo") {
             money = 2
         }
-        if (money === "moneyThree") {
-            money = 3
-        }
 
-        debugger
+        //debugger - Ran this debugger to fix a lot of the branching issues
         if (frontEndBackEnd === 2 &&
             company === 1 && 
             money   === 1 &&
@@ -83,6 +80,7 @@ $(document).ready(function(event) {
         }
 
         $(".yourname").text(name);
+
         //Used for Testing Purposes
         //$("#output").text(result);
 

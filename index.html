@@ -8,75 +8,14 @@
     <title>Track Suggester</title>
 </head>
 <body>
+    <!--Start of the Page-->
     <div class="container">
         <p id="headerTop">Alex Williams - <a href="https://github.com/Zizzs/">Github Repository</a></p><br>
         <img id="headerimage" src="img/headerimage.jpg">
         <div id="description">Choose from the options below to find out the best programming language for you.</div>
         <br>
         <br>
-        <form id="formInfo">
-            <div id="yourNameDiv" class="form-group">
-                <label class="control-label for="nameInput">Your Name</label>
-                <input required="" id="nameInput" class="form-control" type="text">
-            </div>
-            <div id="companySizeDiv" class="form-group">
-                <label class="control-label" for="companySize">Choose your desired company size:</label>
-                <select class="form-control" id="companySize">
-                    <option value="1">I want to work for the largest company of all, like Microsoft or Amazon!</option>
-                    <option value="2">I would like to work for a somewhat big company.</option>
-                    <option value="3">I'd much prefer a medium sized company, a game developer perhaps?</option>
-                    <option value="4">I'd much rather work in a smaller company, where my syntax errors will be seen by all!</option>
-                </select>
-            </div>
-            <div class="radio">
-                <label class="control-label" for="companySize">How much money would you like to make?</label><br>
-                <input type="radio" name="money" value="moneyOne" checked>
-                      I would like to make ALL the money. 
-                </label>
-            </div>
-            <div class="radio">
-                <label>
-                <input type="radio" name="money" value="moneyTwo">
-                      I'm fine with just a decent bit of money.
-                </label>
-            </div>
-            <div class="radio">
-                <label>
-                <input type="radio" name="money" value="moneyThree">
-                      I'm totally fine with being poor or homeless.
-                </label>
-            </div>
-            <div id="frontBackDiv" class="form-group">
-                <label class="control-label" for="frontBackend">Would you prefer to work on the Front End or the Back End?</label>
-                    <select class="form-control" id="frontBackend">
-                        <option value="1">I would like to work Front End!</option>
-                        <option value="2">I would like to work Back End!</option>
-                    </select>
-            </div>
-            <div id="timeDiv" class="form-group">
-                <label class="control-label" for="timeAmount">How many hours do you expect to put into learning the language?</label>
-                    <select class="form-control" id="timeAmount">
-                        <option value="1">10 hours</option>
-                        <option value="2">100 hours</option>
-                        <option value="3">1000 hours</option>
-                        <option value="4">Over 9000 Hours</option>
-                    </select>
-            </div>
-            <div id="colorDiv" class="form-group">
-                <label class="control-label" for="favColor">What is your favorite color?</label>
-                    <select class="form-control" id="favColor">
-                        <!-- Can't figure out how to get the color to change to the selected color within the input box after selecting. Will go back to this later.-->
-                        <option disabled="disabled" style="color:black" selected="selected"></option>
-                        <option style="color:orange" value="4">Orange</option>
-                        <option style="color:green" value="1">Green</option>
-                        <option style="color:red"value="2">Red</option>
-                        <option style="color:blue"value="3">Blue</option>
-                    </select>
-            </div>
-            <br>
-            <button id="submitbutton" type="submit" class="btn btn-info btn-lg">Show Me My Language</button>
-        </form>
-        <br>
+        <!--This section is the output from the branches, stating the programming language you ended up with and also gives information about that language. Including a link to a website (Techopedia) that has more information regarding the language.-->
         <div class="well well-lg">
             <div id="csharpInfo">
                 <img id="csharpimg" src="img/csharp.png">
@@ -111,6 +50,69 @@
                 In December 1998, the World Wide Web Consortium (W3C) published the first CSS specification (CSS1). This was followed by CSS Level 2 (CSS2), and CSS Level 2, Revision 1 (CSS2.1)<br><a href="https://www.techopedia.com/definition/26268/cascading-style-sheet-css">Definition from Techopedia</a></p>
             </div>
         </div>
+        <!--Start of the Form-->
+        <form id="formInfo">
+            <!--Name Form, Will pop up an alert if left blank-->
+            <div id="yourNameDiv" class="form-group">
+                <label class="control-label for="nameInput">Your Name</label>
+                <input required="" id="nameInput" class="form-control" type="text">
+            </div>
+            <!--Designate which size company you would prefer to work in. Sets value and used for branching.-->
+            <div id="companySizeDiv" class="form-group">
+                <label class="control-label" for="companySize">Choose your desired company size:</label>
+                <select class="form-control" id="companySize">
+                    <option value="1">I want to work for the largest company of all, like Microsoft or Amazon!</option>
+                    <option value="2">I would like to work for a somewhat big company.</option>
+                    <option value="3">I'd much prefer a medium sized company, a game developer perhaps?</option>
+                    <option value="4">I'd much rather work in a smaller company, where my syntax errors will be seen by all!</option>
+                </select>
+            </div>
+            <!--Designate how much money you would like to make. Sets value and used for branching.-->
+            <div class="radio">
+                <label class="control-label" for="companySize">How much money would you like to make?</label><br>
+                <input type="radio" name="money" value="moneyOne" checked>
+                      I would like to make ALL the money. 
+                </label>
+            </div>
+            <div class="radio">
+                <label>
+                <input type="radio" name="money" value="moneyTwo">
+                      I'm fine with just a decent bit of money.
+                </label>
+            </div>
+            <!--Designate if you would prefer to do Backend or Frontend code.-->
+            <div id="frontBackDiv" class="form-group">
+                <label class="control-label" for="frontBackend">Would you prefer to work on the Front End or the Back End?</label>
+                    <select class="form-control" id="frontBackend">
+                        <option value="1">I would like to work Front End!</option>
+                        <option value="2">I would like to work Back End!</option>
+                    </select>
+            </div>
+            <!--Asks how many hours you expect to put into the code to master it. Not really a realistic value, but is used in branching.-->
+            <div id="timeDiv" class="form-group">
+                <label class="control-label" for="timeAmount">How many hours do you expect to put into learning the language?</label>
+                    <select class="form-control" id="timeAmount">
+                        <option value="1">10 hours</option>
+                        <option value="2">100 hours</option>
+                        <option value="3">1000 hours</option>
+                        <option value="4">Over 9000 Hours</option>
+                    </select>
+            </div>
+            <!--Pick which color you prefer. Used as a temnporary form to fit form requirements. Might get changed later, but I kinda like it.-->
+            <div id="colorDiv" class="form-group">
+                <label class="control-label" for="favColor">What is your favorite color?</label>
+                    <select class="form-control" id="favColor">
+                        <!-- Can't figure out how to get the color to change to the selected color within the input box after selecting. Will go back to this later.-->
+                        <option disabled="disabled" style="color:black" selected="selected"></option>
+                        <option style="color:orange" value="4">Orange</option>
+                        <option style="color:green" value="1">Green</option>
+                        <option style="color:red"value="2">Red</option>
+                        <option style="color:blue"value="3">Blue</option>
+                    </select>
+            </div>
+            <br>
+            <button id="submitbutton" type="submit" class="btn btn-info btn-lg">Show Me My Language</button>
+        </form>
     </div>
 </body>
 <script src="js/jquery-3.3.1.js"> </script>
