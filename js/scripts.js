@@ -32,7 +32,7 @@ $(document).ready(function(event) {
 
         } else if (frontEndBackEnd === 2 &&
                    (company === 2 || 3 && !4) && 
-                   (money === 1) &&
+                   (money === 2) &&
                    (time === 2 || 3) &&
                    (color === 1 || 2)) {
                    result = "Java";
