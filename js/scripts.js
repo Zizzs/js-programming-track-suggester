@@ -17,6 +17,44 @@ $(document).ready(function(event) {
         } else if (money === "moneyThree") {
             result = "Well, sorry to burst your bubble boy-o. You'll most likely be making money as a programmer. Tough Luck."
         }
+
+        if (result === "C#") {
+            $("#csharpInfo").show();
+            $("#javaInfo").hide();
+            $("#phpInfo").hide();
+            $("#rubyInfo").hide();
+            $("#noInfo").hide();
+        }
+        if (result === "Java") {
+            $("#csharpInfo").hide();
+            $("#javaInfo").show();
+            $("#phpInfo").hide();
+            $("#rubyInfo").hide();
+            $("#noInfo").hide();
+        }
+        if (result === "PHP") {
+            $("#csharpInfo").hide();
+            $("#javaInfo").hide();
+            $("#phpInfo").show();
+            $("#rubyInfo").hide();
+            $("#noInfo").hide();
+        }
+        if (result === "Ruby") {
+            $("#csharpInfo").hide();
+            $("#javaInfo").hide();
+            $("#phpInfo").hide();
+            $("#rubyInfo").show();
+            $("#noInfo").hide();
+        }
+        if (result = "Well, sorry to burst your bubble boy-o. You'll most likely be making money as a programmer. Tough Luck.") {
+            $("#csharpInfo").hide();
+            $("#javaInfo").hide();
+            $("#phpInfo").hide();
+            $("#rubyInfo").hide();
+            $("#noInfo").show();
+        }
+
+
         $("#output").text(result);
 
 })});
