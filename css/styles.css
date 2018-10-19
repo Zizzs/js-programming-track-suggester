@@ -14,6 +14,10 @@
     display: none
 }
 
+#cssInfo {
+    display: none
+}
+
 #noInfo {
     display: none
 }
@@ -23,7 +27,7 @@
     width: 250px;
 }
 
-#javapimg {
+#javaimg {
     height: 250px;
     width: 250px;
 }
@@ -39,6 +43,11 @@
 }
 
 #sadfaceimg {
+    height: 250px;
+    width: 250px;
+}
+
+#cssimg {
     height: 250px;
     width: 250px;
 }

@@ -8,7 +8,7 @@
 <body>
     <div class="container">
         <form id="formInfo">
-            <div id="trackOneDiv" class="form-group">
+            <div id="companySizeDiv" class="form-group">
                 <label class="control-label" for="companySize">Choose your desired company size:</label>
                 <select class="form-control" id="companySize">
                     <option value="1">I want to work for the largest company of all, like Microsoft or Amazon!</option>
@@ -35,9 +35,12 @@
                       I'm totally fine with being poor or homeless.
                 </label>
             </div>
-            <div id="trackOneDiv" class="form-group">
-                <label class="control-label" for="trackOneInput">Input Number</label>
-                <input type="text" class="form-control" id="trackOneInput">
+            <div id="frontBackDiv" class="form-group">
+                <label class="control-label" for="frontBackend">Would you prefer to work on the Front End or the Back End?</label>
+                    <select class="form-control" id="frontBackend">
+                        <option value="1">I would like to work Front End!</option>
+                        <option value="2">I would like to work Back End!</option>
+                    </select>
             </div>
             <button id="submitbutton" type="submit" class="btn btn-info btn-lg">Show Me My Language</button>
         </form>
@@ -45,6 +48,7 @@
         <div id="javaInfo"><img id="javaimg" src="img/java.png"></div>
         <div id="phpInfo"><img id="phpimg" src="img/php.png"></div>
         <div id="rubyInfo"><img id="rubyimg" src="img/ruby.png"></div>
+        <div id="cssInfo"><img id="cssimg" src="img/css.png"></div>
         <div id="noInfo"><img id="sadfaceimg" src="img/sadface.png"></div>
         <div><span id="output"></span></div>
     </div>
