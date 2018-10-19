@@ -1,12 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link href="https://fonts.googleapis.com/css?family=Raleway:500i" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Dosis" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="css/bootstrap.css" style="text/css">
     <link rel="stylesheet" href="css/styles.css" style="text/css">
     <title>Track Suggester</title>
 </head>
 <body>
     <div class="container">
+        <h1 id="headerOne">Programming Track Suggester</h1>
+        <div id="description">Choose from the options below to find out the best programming language for you.</div>
+        <br>
+        <br>
         <form id="formInfo">
             <div id="companySizeDiv" class="form-group">
                 <label class="control-label" for="companySize">Choose your desired company size:</label>
@@ -18,7 +24,7 @@
                 </select>
             </div>
             <div class="radio">
-                <label>
+                <label class="control-label" for="companySize">How much money would you like to make?</label><br>
                 <input type="radio" name="money" value="moneyOne" checked>
                       I would like to make ALL the money. 
                 </label>
@@ -42,15 +48,47 @@
                         <option value="2">I would like to work Back End!</option>
                     </select>
             </div>
+            <div id="timeDiv" class="form-group">
+                <label class="control-label" for="timeAmount">How many hours do you expect to put into learning the language?</label>
+                    <select class="form-control" id="timeAmount">
+                        <option value="1">10 hours</option>
+                        <option value="2">100 hours</option>
+                        <option value="3">1000 hours</option>
+                        <option value="4">Over 9000 Hours</option>
+                    </select>
+            </div>
+            <div id="colorDiv" class="form-group">
+                <label class="control-label" for="favColor">What is your favorite color?</label>
+                    <select class="form-control" id="favColor">
+                        <!-- Can't figure out how to get the color to change to the selected color within the input box after selecting. Will go back to this later.-->
+                        <option disabled="disabled" style="color:black" selected="selected"></option>
+                        <option style="color:orange" value="4">Orange</option>
+                        <option style="color:green" value="1">Green</option>
+                        <option style="color:red"value="2">Red</option>
+                        <option style="color:blue"value="3">Blue</option>
+                    </select>
+            </div>
+
             <button id="submitbutton" type="submit" class="btn btn-info btn-lg">Show Me My Language</button>
         </form>
-        <div id="csharpInfo"><img id="csharpimg" src="img/csharp.png"></div>
-        <div id="javaInfo"><img id="javaimg" src="img/java.png"></div>
-        <div id="phpInfo"><img id="phpimg" src="img/php.png"></div>
-        <div id="rubyInfo"><img id="rubyimg" src="img/ruby.png"></div>
-        <div id="cssInfo"><img id="cssimg" src="img/css.png"></div>
-        <div id="noInfo"><img id="sadfaceimg" src="img/sadface.png"></div>
-        <div><span id="output"></span></div>
+        <br>
+        <div class="well well-lg" id="csharpInfo"><img id="csharpimg" src="img/csharp.png">
+        </div>
+
+        <div class="well well-lg" id="javaInfo"><img id="javaimg" src="img/java.png">
+        </div>
+
+        <div class="well well-lg" id="phpInfo"><img id="phpimg" src="img/php.png">
+        </div>
+
+        <div class="well well-lg" id="rubyInfo"><img id="rubyimg" src="img/ruby.png">
+        </div>
+
+        <div class="well well-lg" id="cssInfo"><img id="cssimg" src="img/css.png">
+        </div>
+
+        <div class="well well-lg" id="noInfo"><img id="sadfaceimg" src="img/sadface.png">
+        </div>
     </div>
 </body>
 <script src="js/jquery-3.3.1.js"> </script>

@@ -1,44 +1,55 @@
-
 $(document).ready(function(event) {
     $("#formInfo").submit(function(event) {
         event.preventDefault();
         var company = parseInt($("#companySize").val());
         var money = $("input:radio[name=money]:checked").val();
         var frontEndBackEnd = parseInt($("#frontBackend").val());
+        var time = parseInt($("#timeAmount").val());
+        var color = parseInt($("#favColor").val());
+
+        $('#favColor').css('color','green');
+        $('#favColor').css('color','red');
+        $('#favColor').css('color','blue');
+        $('#favColor').css('color','orange');
         
+        if (money === "moneyOne") {
+            money = 1
+        }
+        if (money === "moneyTwo") {
+            money = 2
+        }
+        if (money === "moneyThree") {
+            money = 3
+        }
 
 
-        if (company === 1 && 
-            money   === "moneyOne" &&
-            frontEndBackEnd === 2 ||
-            frontEndBackEnd === !1) {
+        if (frontEndBackEnd === 2 &&
+            company === 1 && 
+            money   === 1 &&
+            time === 4 ) {
             result = "C#";
+        
+        } else if (frontEndBackEnd === 1) {
+            result = "CSS";
 
-        } else if (company === 2 ||
-                   company === 3 && 
-                   money === "moneyOne" &&
-                   frontEndBackEnd === 2) {
+        } else if (frontEndBackEnd === 2 &&
+                   (company === 2 || 3) && 
+                   (money === 1) &&
+                   time === 3) {
                    result = "Java";
 
-        } else if (company === 1 || 
-                   company === 2 || 
-                   company === 3 || 
-                   company === 4 && 
-                   money === "moneyOne" || 
-                   money === "moneyTwo" && 
-                   frontEndBackEnd === 1 ||
-                   frontEndBackEnd === !2) {
-                   result = "CSS";
+        } else if (color === 2 &&
+                    frontEndBackEnd === 2 &&
+                    (money === 2 && !3 && !4) &&
+                    time === 2 || 1) {
+                    result = "Ruby";
 
-        } else if (company === 3 && 
-                   money === "moneyTwo") {
+        } else if (color === !2 &&
+                   frontEndBackEnd === 2 &&
+                   (company === 3 || 4) &&
+                   money === 2 &&
+                   time === 3 || 4) {
                    result = "PHP";
-
-        } else if (money === "moneyTwo") {
-                   result = "Ruby";
-
-        // } else if (money === "moneyThree") {
-        //       result = "Well, sorry to burst your bubble boy-o. You'll most likely be making money as a programmer. Tough Luck."
         }
 
         if (result === "C#") {
@@ -81,16 +92,8 @@ $(document).ready(function(event) {
             $("#noInfo").hide();
             $("#cssInfo").show();
         }
-        // if (result = "Well, sorry to burst your bubble boy-o. You'll most likely be making money as a programmer. Tough Luck.") {
-        //     $("#csharpInfo").hide();
-        //     $("#javaInfo").hide();
-        //     $("#phpInfo").hide();
-        //     $("#rubyInfo").hide();
-        //     $("#noInfo").show();
-        //     $("#cssInfo").hide();
-        // }
 
-
-        $("#output").text(result);
+        //Used for Testing Purposes
+        //$("#output").text(result);
 
 })});

@@ -1,3 +1,4 @@
+
 #csharpInfo {
     display: none
 }
@@ -22,32 +23,104 @@
     display: none
 }
 
+#companySize {
+    max-width: 60%;
+}
+
+#frontBackend {
+    max-width: 30%;
+}
+
+#timeAmount{
+    max-width: 16%;
+}
+
+#favColor {
+    max-width: 10%
+}
 #csharpimg {
     height: 250px;
     width: 250px;
+    margin-left: 35%;
+    margin-right: 50%;
 }
 
 #javaimg {
     height: 250px;
-    width: 250px;
+    width: 200px;
+    margin-left: 35%;
+    margin-right: 50%;
 }
 
 #phpimg {
     height: 250px;
     width: 250px;
+    margin-left: 35%;
+    margin-right: 50%;
 }
 
 #rubyimg {
     height: 250px;
     width: 250px;
+    margin-left: 35%;
+    margin-right: 50%;
 }
 
 #sadfaceimg {
     height: 250px;
     width: 250px;
+    margin-left: 35%;
+    margin-right: 50%;
 }
 
 #cssimg {
     height: 250px;
     width: 250px;
+    margin-left: 35%;
+    margin-right: 50%;
+}
+
+
+
+#greencolor {
+    background-color: green;
+}
+
+#redcolor {
+    background-color: red;
+}
+
+#bluecolor {
+    background-color: blue;
+}
+
+#orangecolor {
+    background-color: orange;
+}
+
+.well {
+    border: 5px;
+    background-color: rgb(216, 208, 189);
+}
+
+body {
+    background-color: #5CDB95;
+    color: #05386B;
+    font-family: "Dosis", sans-serif;
+}
+
+#headerOne {
+    font-weight: bold;
+    font-size: 50px;
+    text-align: center;
+}
+
+#description {
+    font-family: "Raleway", sans-serif;
+    text-align: center;
+    font-size: 20px;
+}
+
+.control-label {
+    font-size: 23px;
 }
