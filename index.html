@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="css/bootstrap.css" style="text/css">
+    <link rel="stylesheet" href="css/styles.css" style="text/css">
+    <title>Track Suggester</title>
+</head>
+<body>
+    <div class="container">
+        <form id="formInfo">
+            <div id="trackOneDiv" class="form-group">
+                <label class="control-label" for="companySize">Choose your desired company size:</label>
+                <select class="form-control" id="companySize">
+                    <option value="1">I want to work for the largest company of all, like Microsoft or Amazon!</option>
+                    <option value="2">I would like to work for a somewhat big company.</option>
+                    <option value="3">I'd much prefer a medium sized company, a game developer perhaps?</option>
+                    <option value="4">I'd much rather work in a smaller company, where my syntax errors will be seen by all!</option>
+                </select>
+            </div>
+            <div class="radio">
+                <label>
+                <input type="radio" name="money" value="moneyOne" checked>
+                      I would like to make ALL the money. 
+                </label>
+            </div>
+            <div class="radio">
+                <label>
+                <input type="radio" name="money" value="moneyTwo">
+                      I'm fine with just a decent bit of money.
+                </label>
+            </div>
+            <div class="radio">
+                <label>
+                <input type="radio" name="money" value="moneyThree">
+                      I'm totally fine with being poor or homeless.
+                </label>
+            </div>
+            <div id="trackOneDiv" class="form-group">
+                <label class="control-label" for="trackOneInput">Input Number</label>
+                <input type="text" class="form-control" id="trackOneInput">
+            </div>
+            <button id="submitbutton" type="submit" class="btn btn-info btn-lg">Show Me My Language</button>
+        </form>
+        <div><span id="output"></span></div>
+    </div>
+</body>
+<script src="js/jquery-3.3.1.js"> </script>
+<script src="js/scripts.js"> </script>
+</html>
