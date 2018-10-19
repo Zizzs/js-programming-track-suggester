@@ -14,7 +14,7 @@ _After inputting the specified forms, the website then shows the relevant progra
 
 * _Clone from my Github Repository linked below_
 * _Run index.html_
-* _Or visit the GH-Pages at  https://zizzs.github.io/js-programming-track-suggester/index.html
+* _Or visit the GH-Pages at  https://zizzs.github.io/js-programming-track-suggester/index.html_
 
 
 _No servers or databases required. All files, including fonts and banners are included in the Github Repository._
